@@ -1,8 +1,9 @@
 # GDCController
 A GDC controller that could cancel former queue's finish execution.
 
+SampleCode:
 
-@IBAction func testAction(sender: AnyObject) {
+    @IBAction func testAction(sender: AnyObject) {
         
         testGDCController(text: "Process A")
         
@@ -32,7 +33,13 @@ A GDC controller that could cancel former queue's finish execution.
         }
     }
     
-2015-08-14 18:55:18 +0000 : Process A Start
-2015-08-14 18:55:21 +0000 : Process B Start
-2015-08-14 18:55:24 +0000 : Cancel
-2015-08-14 18:55:27 +0000 : Process B Finished
+SampleLog:
+
+        2015-08-14 18:55:18 +0000 : Process A Start
+        
+        2015-08-14 18:55:21 +0000 : Process B Start
+        
+        2015-08-14 18:55:24 +0000 : Cancel
+
+        2015-08-14 18:55:27 +0000 : Process B Finished
+
